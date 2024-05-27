@@ -631,12 +631,8 @@ section#yourstyle {
     margin-top: 70px;
 }
 
-section#yourstyle {
-    text-align: left;
-    font-family: exo2_bold;
-    font-size: 45px;
-    text-transform: uppercase;
-    margin-top: 70px;
+#yourstyle.catnametop {
+    margin-top: 30px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -683,6 +679,7 @@ section#yourstyle {
         transform: rotate(360deg);
     }
 }
+
 .revrotate {
     animation: revspinner 8s linear infinite;
 }
@@ -692,6 +689,7 @@ section#yourstyle {
         transform: rotate(-360deg);
     }
 }
+
 .pulse {
     animation: pulsetap 3s linear infinite;
 }
@@ -700,10 +698,46 @@ section#yourstyle {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
+}
+
+/* categorypage */
+.catbox {
+    width: 100%;
+    min-height: 240px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: left;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: 'exo2_bold';
+    text-transform: uppercase;
+    direction: ltr;
+}
+
+.cattop {
+    background-image: url('../images/bluecat.svg');
+}
+
+.catbottom {
+    background-image: url('../images/pinkcat.svg');
+    margin-top: -30px;
+}
+
+.catbox.catbottom span {
+    margin-top: 50px;
+    display: block;
+}
+
+section#category {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
 }

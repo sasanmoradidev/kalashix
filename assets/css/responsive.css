@@ -10,6 +10,11 @@
     Body {
         max-width: 768px;
     }
+
+    section#category {
+        flex-direction: row;
+    }
+
 }
 
 @media (min-width: 1400px) {}
